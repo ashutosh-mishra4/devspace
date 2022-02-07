@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nextui-org/react": "^1.0.2-beta.3",
     "autoprefixer": "^10.3.7",
     "next": "11.1.2",
     "postcss": "^8.3.11",
