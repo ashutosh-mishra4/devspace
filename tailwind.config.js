@@ -2,9 +2,15 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    colors: {
+      'background': '#1F1D36',
+      'white': '#ffffff',
+      'wheat': '#f5deb3'
+    },
     extend: {
       fontFamily: {
-        sans: ['Play']
+        play: ['Play'],
+        cursive: ['Monoton']
       }
     },
   },
