@@ -11,30 +11,23 @@ export async function getServerSideProps() {
         }
     })
     const datas = await res.json()
-
-    if(!datas) {
-        return {
-            notFound: true
-        }
-    }
-
     return { props: { datas }}
 }
   
 
-function tech({ datas }) {
+function techSpaces({ datas }) {
     return (
-        <div className="flex flex-col gap-6 justify-center items-center">
+        <div className="flex flex-col lg:flex-row flex-wrap min-h-screen bg-dark-background font-play gap-6 justify-center items-center">
             {/* Section for displaying all the spaces with 'tech' keyword */}
             {datas.data.map((item, key) => {
                 return (
-                    <div key={key} className="bg-background rounded-xl w-5/6 h-auto p-6">
-                        <p className="text-white font-bold text-3xl whitespace-normal">{item.title}</p>
+                    <div key={key} className="bg-orange rounded-xl w-5/6 lg:w-80 h-auto lg:h-80 lg:min-h-full p-6">
+                        <p className="font-bold text-3xl whitespace-normal">{item.title}</p>
                         {/* Show participants if the space is live else show starting time */}
                         {item.state=='live' ?
                             <div>
-                                <p className="text-white pt-2">{item.participant_count} people are listening</p>
-                                <button className="bg-wheat p-2 mt-2 font-bold rounded">
+                                <p className="pt-2">{item.participant_count} people are listening</p>
+                                <button className="bg-white border-2 p-2 mt-2 font-bold rounded">
                                     {/*Link to the space*/}
                                     <a href={`https://twitter.com/i/spaces/${item.id}`}>
                                         Start Listening
@@ -42,8 +35,8 @@ function tech({ datas }) {
                                 </button>
                             </div> :
                             <div>
-                                <p className="text-white pt-2">Starting at {item.scheduled_start}</p>
-                                <button className="bg-wheat mt-2 p-2 font-bold rounded">
+                                <p className="pt-2">Starting at {item.scheduled_start}</p>
+                                <button className="bg-white border-2 mt-2 p-2 font-bold rounded">
                                     {/*Link to the space*/}
                                     <a href={`https:twitter.com/i/spaces/${item.id}`}>
                                         Set Reminder
@@ -58,4 +51,4 @@ function tech({ datas }) {
     )
 }
 
-export default tech
+export default techSpaces
