@@ -3,8 +3,8 @@ import Image from "next/image";
 
 function hero() {
   return (
-    <section className="bg-background">
-    <div className="bg-green-300 border-b-2 border-t-2 border-black">
+    <section className="bg-dark-background">
+    <div className="bg-green-300 border-b-2 border-background divide-solid">
       <h1 className="text-4xl font-bold text-center px-16 pt-10 font-cursive text-wheat">
         DevSpaces
       </h1>
@@ -19,7 +19,7 @@ function hero() {
       </div>
       <p className="text-center text-xl text-white px-10 font-play">Find and save upcoming Twitter spaces on tech, programming, and development</p>
       <div className="flex justify-center">
-        <button className="bg-wheat font-play font-black text-lg px-24 py-4 my-5 rounded">Get Started</button>
+        <button className="bg-wheat border-2 border-white font-play font-black text-lg px-24 py-4 my-5 rounded">Get Started</button>
       </div>
     </div>
     </section>
