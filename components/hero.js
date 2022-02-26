@@ -17,7 +17,7 @@ function hero() {
           height={300}
         />
       </div>
-      <p className="text-center text-xl text-white px-10 font-play">Find and save upcoming Twitter spaces on tech, programming, and development</p>
+      <p className="text-center text-xl text-white px-10 font-play">Find live and scheduled Twitter spaces on tech, programming, and development</p>
       <div className="flex justify-center">
         <button className="bg-wheat border-2 border-white font-play font-black text-lg px-24 py-4 my-5 rounded">Get Started</button>
       </div>
