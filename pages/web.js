@@ -20,13 +20,13 @@ function webSpaces({ datas }) {
         <div className="flex flex-col lg:flex-row min-h-screen flex-wrap gap-6 font-play justify-center bg-dark-background items-center">
             {/* Section for displaying all the spaces with 'web' keyword */}
             {datas.data.map((item, key) => {
-                
+
                 {/* function to handle the link to space */}
                 const clickHandle = () => {
                     window.location.href = `https://twitter.com/i/spaces/${item.id}`
                 }
                 return (
-                    <div key={key} className="bg-orange hover:cursor-pointer transition ease-in-out hover:bg-wheat rounded-xl w-5/6 lg:w-80 h-auto lg:h-80 lg:min-h-full p-6">
+                    <div key={key} className="bg-orange hover:cursor-pointer transition ease-in-out hover:bg-wheat rounded-xl w-80 lg:w-80 h-auto lg:h-80 lg:min-h-full p-6">
                         <p className="font-bold text-3xl whitespace-normal">{item.title}</p>
                         {/* Show participants count if the space is live else show starting time */}
                         {item.state=='live' ?

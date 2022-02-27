@@ -26,7 +26,7 @@ function devSpaces({ datas }) {
                     window.location.href = `https://twitter.com/i/spaces/${item.id}`
                 }
                 return (
-                    <div key={key} className="bg-orange hover:cursor-pointer transition ease-in-out hover:bg-wheat rounded-xl w-5/6 h-auto lg:w-80 lg:h-80 lg:min-h-full p-6">
+                    <div key={key} className="bg-orange hover:cursor-pointer transition ease-in-out hover:bg-wheat rounded-xl w-80 h-auto lg:w-80 lg:h-80 lg:min-h-full p-6">
                         <p className="font-bold text-3xl whitespace-normal">{item.title}</p>
                         {/* Show participants if the space is live else show starting time */}
                         {item.state=='live' ?
