@@ -14,15 +14,15 @@ export async function getServerSideProps() {
   
 
 function techSpaces({ datas }) {
-
-    const clickHandle = () => {
-        document.location.href = `https://twitter.com/i/spaces/${item.id}`
-      }
-
     return (
         <div className="flex flex-col lg:flex-row flex-wrap min-h-screen pb-16 w-109 md:w-full bg-dark-background font-play gap-6 justify-center items-center">
             {/* Section for displaying all the spaces with 'tech' keyword */}
             {datas.data.map((item, key) => {
+
+                {/* function to handle the link to space */}
+                const clickHandle = () => {
+                    window.location.href = `https://twitter.com/i/spaces/${item.id}`
+                }
                 return (
                     <div key={key} className="bg-orange hover:cursor-pointer transition ease-in-out hover:bg-wheat rounded-xl w-80 h-auto lg:h-80 lg:min-h-full p-6">
                         <p className="font-bold text-3xl">{item.title}</p>

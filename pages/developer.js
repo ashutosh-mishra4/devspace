@@ -16,16 +16,15 @@ export async function getServerSideProps() {
   
 
 function developerSpaces({ datas }) {
-
-    const clickHandle = () => {
-        document.location.href = `https://twitter.com/i/spaces/${item.id}`
-    }
-
-
     return (
         <div className="flex flex-col min-h-screen bg-dark-background font-play gap-6 justify-center items-center">
             {/* Section for displaying all the spaces with 'tech' keyword */}
             {datas.data.map((item, key) => {
+
+                {/* function to handle the link to space */}
+                const clickHandle = () => {
+                    window.location.href = `https://twitter.com/i/spaces/${item.id}`
+                }
                 return (
                     <div key={key} className="bg-orange hover:cursor-pointer transition ease-in-out hover:bg-wheat rounded-xl w-5/6 h-auto p-6">
                         <p className="font-bold text-3xl whitespace-normal">{item.title}</p>
