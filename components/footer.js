@@ -1,8 +1,14 @@
 function footer() {
     return (
-        <div className="text-white text-center font-play mt-10">
-            Made with Love by Ashutosh Mishra
+        <div className="font-black text-center bg-orange font-play py-2">
+            <p>
+                Made with ❤️ by Ashutosh Mishra
+            </p>
+            <p>
+                Build with NextJS. Deployed on Netlify
+            </p>
         </div>
+
     )
 }
 
