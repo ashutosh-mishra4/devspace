@@ -1,5 +1,3 @@
-import React from "react"
-
 export async function getServerSideProps() {
 
     // fetching relevant data from Twitter Spaces API related to query 'tech'

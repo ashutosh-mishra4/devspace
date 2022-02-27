@@ -22,7 +22,7 @@ function topics() {
                     <img src="/web.jpg" className="w-72 h-48 rounded-2xl object-cover"/>
                     <p className="text-white text-4xl mt-4 px-4 font-black">Web</p>
                     <p className="text-white w-72 mt-4 px-4">This page will show all the live and scheduled Twitter spaces with 'Web' keyword</p>
-                    <Link href="web">
+                    <Link href="/web">
                         <a><button className="bg-wheat font-play font-black text-xl m-4 px-20 py-4 my-5 rounded">Visit Now</button></a>
                     </Link>
                 </div>
@@ -32,7 +32,7 @@ function topics() {
                     <img src="/dev.jpg" className="w-72 h-48 rounded-2xl object-cover"/>
                     <p className="text-white text-4xl mt-4 px-4 font-black">Dev</p>
                     <p className="text-white w-72 mt-4 px-4">This page will show all the live and scheduled Twitter spaces with 'Dev' keyword</p>
-                    <Link href="dev">
+                    <Link href="/dev">
                         <a><button className="bg-wheat font-play font-black text-xl m-4 px-20 py-4 my-5 rounded">Visit Now</button></a>
                     </Link>
                 </div>
@@ -42,7 +42,7 @@ function topics() {
                     <img src="/developer.jpg" className="w-72 h-48 rounded-2xl object-cover"/>
                     <p className="text-white text-4xl mt-4 px-4 font-black ">Developer</p>
                     <p className="text-white w-72 mt-4 px-4">This page will show all the live and scheduled Twitter spaces with 'Developer' keyword</p>
-                    <Link href="developer">
+                    <Link href="/developer">
                         <a><button className="bg-wheat font-play font-black text-xl m-4 px-20 py-4 my-5 rounded">Visit Now</button></a>
                     </Link>
                 </div>
