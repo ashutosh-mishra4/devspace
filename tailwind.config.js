@@ -16,6 +16,9 @@ module.exports = {
       fontFamily: {
         play: ['Play'],
         cursive: ['Monoton']
+      },
+      width: {
+        '109': '109vw'
       }
     },
   },
