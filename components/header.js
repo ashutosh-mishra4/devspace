@@ -85,7 +85,7 @@ function header() {
         <HiMenuAlt1 onClick={hideShowLinks} className='mr-12 h-8 w-8 hover:cursor-pointer' />
         </div>
         <div className='flex justify-center'>
-        <ul className={`font-play md:hidden ${ishidden} bg-white h-auto pb-6 w-auto pt-20 flex flex-col items-center text-xl font-black ()`}>
+        <ul className={`font-play md:hidden fixed ${ishidden} bg-white px-8 h-auto pb-6 w-auto pt-20 flex flex-col items-center text-xl font-black ()`}>
           <Link href='/tech'>
             <li className='hover:cursor-pointer hover:underline'>
               <a>
