@@ -32,7 +32,7 @@ function programmingSpaces({ datas }) {
     return (
         <EmailPasswordAuthNoSSR>
         <Header />
-        <div className="flex flex-col pt-24 font-play min-h-screen gap-6 bg-dark-background justify-center items-center">
+        <div className="flex flex-col pt-24 font-play min-h-screen gap-6 bg-dark-background justify-center pb-16 items-center">
             {/* Section for displaying all the spaces with 'tech' keyword */}
             {datas.data.map((item, key) => {
 

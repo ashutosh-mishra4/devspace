@@ -31,7 +31,7 @@ function devSpaces({ datas }) {
     return (
         <EmailPasswordAuthNoSSR>
         <Header />
-        <div className="flex flex-col pt-24 min-h-screen lg:flex-row flex-wrap bg-dark-background font-play gap-6 justify-center items-center">
+        <div className="flex flex-col pt-24 min-h-screen pb-16 lg:flex-row flex-wrap bg-dark-background font-play gap-6 justify-center items-center">
             {/* Section for displaying all the spaces with 'tech' keyword */}
             {datas.data.map((item, key) => {
 

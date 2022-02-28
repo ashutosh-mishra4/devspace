@@ -31,7 +31,7 @@ function webSpaces({ datas }) {
     return (
         <EmailPasswordAuthNoSSR>
         <Header />
-        <div className="flex flex-col pt-24 lg:flex-row min-h-screen flex-wrap gap-6 font-play justify-center bg-dark-background items-center">
+        <div className="flex flex-col pt-24 lg:flex-row min-h-screen pb-16 flex-wrap gap-6 font-play justify-center bg-dark-background items-center">
             {/* Section for displaying all the spaces with 'web' keyword */}
             {datas.data.map((item, key) => {
 
