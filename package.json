@@ -10,8 +10,11 @@
   },
   "dependencies": {
     "next": "^11.1.4",
+    "nextjs-cors": "^2.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "supertokens-auth-react": "^0.18.7",
+    "supertokens-node": "^9.0.0",
     "twitter-lite": "^1.1.0"
   },
   "devDependencies": {

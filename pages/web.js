@@ -1,4 +1,14 @@
-import React from "react"
+import React from 'react'
+import dynamic from 'next/dynamic'
+import EmailPassword from 'supertokens-auth-react/recipe/emailpassword'
+
+// SuperTokens auth component to protect the routes from non signed users' access
+const EmailPasswordAuthNoSSR = dynamic(
+  new Promise((res) =>
+    res(EmailPassword.EmailPasswordAuth)
+  ),
+  { ssr: false }
+)
 
 export async function getServerSideProps(context) {
 
@@ -17,6 +27,7 @@ export async function getServerSideProps(context) {
 
 function webSpaces({ datas }) {
     return (
+        <EmailPasswordAuthNoSSR>
         <div className="flex flex-col lg:flex-row min-h-screen flex-wrap gap-6 font-play justify-center bg-dark-background items-center">
             {/* Section for displaying all the spaces with 'web' keyword */}
             {datas.data.map((item, key) => {
@@ -46,7 +57,8 @@ function webSpaces({ datas }) {
                     </div>
                 )
             })}
-        </div>    
+        </div>
+        </EmailPasswordAuthNoSSR>
     )
 }
 

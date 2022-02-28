@@ -1,3 +1,15 @@
+import React from 'react'
+import dynamic from 'next/dynamic'
+import EmailPassword from 'supertokens-auth-react/recipe/emailpassword'
+
+// SuperTokens auth component to protect the routes from non signed users' access
+const EmailPasswordAuthNoSSR = dynamic(
+  new Promise((res) =>
+    res(EmailPassword.EmailPasswordAuth)
+  ),
+  { ssr: false }
+)
+
 export async function getServerSideProps() {
 
     // fetching relevant data from Twitter Spaces API related to query 'tech'
@@ -15,6 +27,7 @@ export async function getServerSideProps() {
 
 function techSpaces({ datas }) {
     return (
+        <EmailPasswordAuthNoSSR>
         <div className="flex flex-col lg:flex-row flex-wrap min-h-screen pb-16 w-109 md:w-full bg-dark-background font-play gap-6 justify-center items-center">
             {/* Section for displaying all the spaces with 'tech' keyword */}
             {datas.data.map((item, key) => {
@@ -44,7 +57,8 @@ function techSpaces({ datas }) {
                     </div>
                 )
             })}
-        </div>    
+        </div>
+        </EmailPasswordAuthNoSSR>
     )
 }
 
