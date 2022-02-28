@@ -29,7 +29,7 @@ export async function getServerSideProps(context) {
 
 function webSpaces({ datas }) {
     return (
-        <div>
+        <EmailPasswordAuthNoSSR>
         <Header />
         <div className="flex flex-col pt-24 lg:flex-row min-h-screen flex-wrap gap-6 font-play justify-center bg-dark-background items-center">
             {/* Section for displaying all the spaces with 'web' keyword */}
@@ -62,7 +62,7 @@ function webSpaces({ datas }) {
             })}
         </div>
         <Footer />
-        </div>
+        </EmailPasswordAuthNoSSR>
     )
 }
 

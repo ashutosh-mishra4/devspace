@@ -29,7 +29,7 @@ export async function getServerSideProps() {
 
 function techSpaces({ datas }) {
     return (
-        <div>
+        <EmailPasswordAuthNoSSR>
         <Header />
         <div className="flex pt-24 flex-col lg:flex-row flex-wrap min-h-screen pb-16 w-109 md:w-full bg-dark-background font-play gap-6 justify-center items-center">
             {/* Section for displaying all the spaces with 'tech' keyword */}
@@ -62,7 +62,7 @@ function techSpaces({ datas }) {
             })}
         </div>
         <Footer />
-        </div>
+        </EmailPasswordAuthNoSSR>
     )
 }
 
