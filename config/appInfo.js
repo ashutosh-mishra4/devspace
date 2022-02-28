@@ -1,6 +1,6 @@
 export const appInfo = {
-    // learn more about this on https://supertokens.com/docs/thirdparty/appinfo
-    appName: "SuperTokens NextJS Setup",
+    // AppInfo for SuperTokens auth setup 
+    appName: "DevSpaces",
     apiDomain: "https://getdevspaces.netlify.app/",
     websiteDomain: "https://getdevspaces.netlify.app/",
     apiBasePath: "/api/auth",

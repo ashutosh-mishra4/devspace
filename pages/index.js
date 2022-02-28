@@ -13,7 +13,7 @@ export default function Home({datas}) {
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="DevSpaces is a twitter spaces finder for programmers. It displays spaces on tech, programming, and development." />
       </Head>
-      {/* <Header /> */}
+      <Header />
       <Hero />
       <HowItWorks />
       <Topics />

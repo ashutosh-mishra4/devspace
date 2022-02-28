@@ -1,4 +1,6 @@
 import React from 'react'
+import Header from '../components/header'
+import Footer from '../components/footer'
 import dynamic from 'next/dynamic'
 import EmailPassword from 'supertokens-auth-react/recipe/emailpassword'
 
@@ -27,8 +29,9 @@ export async function getServerSideProps(context) {
 
 function webSpaces({ datas }) {
     return (
-        <EmailPasswordAuthNoSSR>
-        <div className="flex flex-col lg:flex-row min-h-screen flex-wrap gap-6 font-play justify-center bg-dark-background items-center">
+        <div>
+        <Header />
+        <div className="flex flex-col pt-24 lg:flex-row min-h-screen flex-wrap gap-6 font-play justify-center bg-dark-background items-center">
             {/* Section for displaying all the spaces with 'web' keyword */}
             {datas.data.map((item, key) => {
 
@@ -58,7 +61,8 @@ function webSpaces({ datas }) {
                 )
             })}
         </div>
-        </EmailPasswordAuthNoSSR>
+        <Footer />
+        </div>
     )
 }
 

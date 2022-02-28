@@ -7,7 +7,7 @@ function hero() {
     <section className="bg-dark-background">
     
     {/* Hero section for mobiles */}
-    <div className="bg-green-300 border-b-2 border-background divide-solid md:hidden">
+    <div className="bg-green-300 border-b-2 pt-10 border-background divide-solid md:hidden">
       <h1 className="text-4xl font-bold text-center pt-10 font-cursive text-wheat">
         DevSpaces
       </h1>
@@ -27,7 +27,7 @@ function hero() {
     </div>
 
     {/* Hero Section for tablets and other big screens */}
-    <div className="hidden md:flex flex-row">
+    <div className="hidden md:flex flex-row pt-12">
       <div className="bg-green-300 border-b-2 border-background divide-solid">
         <h1 className="text-4xl lg:text-5xl lg:text-6xl xl:text-7xl xl:pt-28 lg:pt-22 lg:pt-24 font-bold text-center pt-10 font-cursive text-wheat">
           DevSpaces

@@ -1,4 +1,6 @@
 import React from 'react'
+import Header from '../components/header'
+import Footer from '../components/footer'
 import dynamic from 'next/dynamic'
 import EmailPassword from 'supertokens-auth-react/recipe/emailpassword'
 
@@ -27,8 +29,9 @@ export async function getServerSideProps() {
 
 function techSpaces({ datas }) {
     return (
-        <EmailPasswordAuthNoSSR>
-        <div className="flex flex-col lg:flex-row flex-wrap min-h-screen pb-16 w-109 md:w-full bg-dark-background font-play gap-6 justify-center items-center">
+        <div>
+        <Header />
+        <div className="flex pt-24 flex-col lg:flex-row flex-wrap min-h-screen pb-16 w-109 md:w-full bg-dark-background font-play gap-6 justify-center items-center">
             {/* Section for displaying all the spaces with 'tech' keyword */}
             {datas.data.map((item, key) => {
 
@@ -58,7 +61,8 @@ function techSpaces({ datas }) {
                 )
             })}
         </div>
-        </EmailPasswordAuthNoSSR>
+        <Footer />
+        </div>
     )
 }
 

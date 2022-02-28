@@ -1,4 +1,6 @@
 import React from 'react'
+import Header from '../components/header'
+import Footer from '../components/footer'
 import dynamic from 'next/dynamic'
 import EmailPassword from 'supertokens-auth-react/recipe/emailpassword'
 
@@ -28,7 +30,8 @@ export async function getServerSideProps() {
 function developerSpaces({ datas }) {
     return (
         <EmailPasswordAuthNoSSR>
-        <div className="flex flex-col min-h-screen bg-dark-background font-play gap-6 justify-center items-center">
+        <Header />
+        <div className="flex flex-col pt-24 min-h-screen bg-dark-background font-play gap-6 justify-center items-center">
             {/* Section for displaying all the spaces with 'tech' keyword */}
             {datas.data.map((item, key) => {
 
@@ -58,6 +61,7 @@ function developerSpaces({ datas }) {
                 )
             })}
         </div>
+        <Footer />
         </EmailPasswordAuthNoSSR>
     )
 }
