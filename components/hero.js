@@ -1,4 +1,5 @@
 import React from "react";
+import Link from 'next/link'
 import Image from "next/image";
 
 function hero() {
@@ -34,7 +35,13 @@ function hero() {
         </h1>
         <p className="text-center text-xl lg:text-2xl lg:px-28 xl:px-32 text-white lg:py-12 py-6 px-10 font-play">Find live and scheduled Twitter spaces on tech, programming, and development</p>
         <div className="flex justify-center">
-          <button className="bg-wheat font-play font-black text-lg px-24 py-4 my-5 rounded transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-orange duration-200">Get Started</button>
+          <button className="bg-wheat font-play font-black text-lg px-24 py-4 my-5 rounded transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-orange duration-200">
+            <Link href="#topics">
+              <a>
+                Get Started
+              </a>
+            </Link>
+          </button>
         </div>
       </div>
       <div className="max-w-full flex px-10 lg:hidden">
@@ -55,9 +62,7 @@ function hero() {
           height={900}
         />
       </div>
-
     </div>
-    
     </section>
   );
 }

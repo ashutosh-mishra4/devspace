@@ -3,7 +3,7 @@ import Link from 'next/link'
 // Component to display all the spaces related keywords card
 function topics() {
     return (
-        <div className=" bg-white font-play text-center pb-16"> 
+        <div className=" bg-white font-play text-center pb-16" id="topics"> 
             <p className="text-3xl py-10 font-black">Select your Keyword</p>
             <div className="flex flex-col md:flex-row flex-wrap gap-6 justify-center items-center">        
     
