@@ -13,7 +13,7 @@ DevSpaces is an open-source twitter spaces finder app for programmers. It uses k
 
 ## How it works
 
-![](pubic/how it works.png)
+![](pubic/howitworks.png)
 
 1. **DevSpaces** ask you to select one of the existing keyword card. Currently there are 5 keyword cards - *Tech, Web, Dev, Developer, and Programming.*
 
@@ -21,7 +21,7 @@ DevSpaces is an open-source twitter spaces finder app for programmers. It uses k
 
 3. Once signed in, you can see all the current live and scheduled spaces related to that keyword and enjoy your favorite ones.
 
-![](public/keyword card.png)
+![](public/keywordcard.png)
 
 For the first version, there are 5 keyword cards-
 
@@ -33,15 +33,15 @@ For the first version, there are 5 keyword cards-
 
 You can select any one of it and see the current live and scheduled spaces of that keyword if you are signed in.
 
-![](public/collective cards.png)
+![](public/collectivecards.png)
 
 If the space is live you will be shown the **Start Listening** button in Space card along with the number of current listeners.
 
-![](public/live space.png)
+![](public/livespace.png)
 
 If the space is scheduled, you will be shown the **Set Reminder** button in Space card along with the scheduled time in *ISO 8601* format.
 
-![](public/scheduled space.png)
+![](public/scheduledspace.png)
 
 Both **Start Listening** and **Set Reminder** button will lead you to the twitter link of that particular space.
 
