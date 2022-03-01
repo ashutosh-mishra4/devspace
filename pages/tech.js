@@ -30,7 +30,7 @@ export async function getServerSideProps() {
 
 function techSpaces({ datas }) {
     return (
-        <div>
+        <EmailPasswordAuthNoSSR>
             {/* Title and meta description for this page*/}
             <Head>
                 <title>DevSpaces - Tech</title>
@@ -70,7 +70,7 @@ function techSpaces({ datas }) {
             })}
         </div>
         <Footer />
-        </div>
+        </EmailPasswordAuthNoSSR>
     )
 }
 
