@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import dynamic from 'next/dynamic'
@@ -30,6 +31,13 @@ export async function getServerSideProps() {
 function developerSpaces({ datas }) {
     return (
         <EmailPasswordAuthNoSSR>
+            {/* Title and meta description for this page*/}
+            <Head>
+                <title>DevSpaces - Developer</title>
+                <link rel="icon" href="/favicon.ico" />
+                <meta name="description" content="Page for developer keyword in DevSpaces. This page displays spaces related to developer keyword" />
+            </Head>
+
         <Header />    
         <div className="flex flex-col pt-24 min-h-screen bg-dark-background font-play gap-6 pb-16 justify-center items-center">
             {/* Section for displaying all the spaces with 'tech' keyword */}

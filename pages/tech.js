@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import dynamic from 'next/dynamic'
@@ -29,7 +30,14 @@ export async function getServerSideProps() {
 
 function techSpaces({ datas }) {
     return (
-        <EmailPasswordAuthNoSSR>
+        <div>
+            {/* Title and meta description for this page*/}
+            <Head>
+                <title>DevSpaces - Tech</title>
+                <link rel="icon" href="/favicon.ico" />
+                <meta name="description" content="Page for tech keyword in DevSpaces. This page displays spaces related to tech keyword" />
+            </Head>
+
         <Header />
         <div className="flex pt-24 flex-col lg:flex-row flex-wrap min-h-screen pb-16 w-109 md:w-full bg-dark-background font-play gap-6 justify-center items-center">
             {/* Section for displaying all the spaces with 'tech' keyword */}
@@ -41,7 +49,7 @@ function techSpaces({ datas }) {
                 }
                 return (
                     <div key={key} className="bg-orange hover:cursor-pointer transition ease-in-out hover:bg-wheat rounded-xl w-80 h-auto lg:h-80 lg:min-h-full p-6">
-                        <p className="font-bold text-3xl">{item.title}</p>
+                        <p className="font-bold text-3xl ">{item.title}</p>
                         {/* Show participants if the space is live else show starting time */}
                         {item.state=='live' ?
                             <div>
@@ -62,7 +70,7 @@ function techSpaces({ datas }) {
             })}
         </div>
         <Footer />
-        </EmailPasswordAuthNoSSR>
+        </div>
     )
 }
 

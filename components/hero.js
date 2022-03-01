@@ -23,7 +23,11 @@ function hero() {
       </div>
       <p className="text-center text-xl sm:px-44 text-white px-10 font-play">Find live and scheduled Twitter spaces on tech, programming, and development</p>
       <div className="flex justify-center">
-        <button className="bg-wheat font-play font-black text-lg px-24 py-4 my-5 rounded transition ease-in-out delay-150 hover:bg-orange duration-75">Get Started</button>
+      <Link href="#topics">
+              <a className="bg-wheat font-play font-black text-lg px-24 py-4 my-5 rounded">
+                Get Started
+              </a>
+            </Link>
       </div>
     </div>
 
@@ -35,13 +39,11 @@ function hero() {
         </h1>
         <p className="text-center text-xl lg:text-2xl lg:px-28 xl:px-32 text-white lg:py-12 py-6 px-10 font-play">Find live and scheduled Twitter spaces on tech, programming, and development</p>
         <div className="flex justify-center">
-          <button className="bg-wheat font-play font-black text-lg px-24 py-4 my-5 rounded transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-orange duration-200">
             <Link href="#topics">
-              <a>
+              <a className="bg-wheat font-play font-black text-lg px-24 py-4 my-5 rounded transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-orange duration-200">
                 Get Started
               </a>
             </Link>
-          </button>
         </div>
       </div>
       <div className="max-w-full flex px-10 lg:hidden">

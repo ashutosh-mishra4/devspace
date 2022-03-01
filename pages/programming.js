@@ -31,6 +31,13 @@ export async function getServerSideProps() {
 function programmingSpaces({ datas }) {
     return (
         <EmailPasswordAuthNoSSR>
+            {/* Title and meta description for this page*/}
+            <Head>
+                <title>DevSpaces - Programming</title>
+                <link rel="icon" href="/favicon.ico" />
+                <meta name="description" content="Page for programming keyword in DevSpaces. This page displays spaces related to programming keyword" />
+            </Head>
+
         <Header />
         <div className="flex flex-col pt-24 font-play min-h-screen gap-6 bg-dark-background justify-center pb-16 items-center">
             {/* Section for displaying all the spaces with 'tech' keyword */}
